@@ -1,0 +1,82 @@
+.block {
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin: 80px;
+	background: green;
+}
+.one {
+	animation: clr 3s linear;
+}
+@keyframes clr {
+	from { 
+		background: red;
+	}
+	to {
+		background: green;
+	}
+}
+.two {
+	animation: scl 3s linear 2s;
+}
+@keyframes scl {
+	from { 
+	transform: scaleX(1);
+	}
+	to {
+		transform: scaleX(1.4);
+	}
+}
+.three {
+	animation: opa 3s linear 6s;
+}
+@keyframes opa {
+	from { 
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+.four {
+	animation: rot 2s linear 9s;
+}
+@keyframes rot {
+	0% { 
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(45deg);
+	}
+	50% {
+		transform: rotate(90deg);
+	}
+	75% {
+		transform: rotate(135deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
+.five {
+	animation: sc 3s linear 11s;
+}
+@keyframes sc {
+	from { 
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.5, 1.4);
+	}
+}
+.six {
+	animation: tr 2s linear 14s;
+}
+@keyframes tr {
+	from { 
+		transform: translate(0);
+	}
+	to {
+		transform: translate(60px, 70px);
+	}
+}
